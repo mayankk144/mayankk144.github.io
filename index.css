@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-image: url(pictures/background.png);
+}
+
+.cover{
+    margin:30px;
+    background-image:url(pictures/semi-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav{
+    background-color: black;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+.name{
+    text-decoration:underline;
+}
+
+.home{
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+img{
+    float:right;
+    height: 300px;
+    margin:50px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.about{
+    padding:20px;
+    margin-left: 20px;
+}
+
+.about p{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.link{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer{
+    background-color:black;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    bottom: 0px;
+    font-size: 15px;
+    color:wheat;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.link:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:940px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0px
+    }
+    img{
+        float: none;
+}
